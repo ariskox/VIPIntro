@@ -8,19 +8,16 @@
 
 import Foundation
 
-class ProfileInteractor {
-    let presenter: ProfilePresenter
-    
-    //Datastore
+class ProfilePresenterInteractor {
     let state: AppState
-    
-    init(presenter: ProfilePresenter, state: AppState) {
-        self.presenter = presenter
+    weak var vc: ProfileViewController?
+
+    init(state: AppState, vc: ProfileViewController) {
         self.state = state
+        self.vc = vc
     }
     
     func processUserGenderSelection() {
-        
-        self.presenter.showUserGenderSelection(gender: state.gender)
+        vc?.genderLabel.text = String(state.gender)
     }
 }

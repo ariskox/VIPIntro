@@ -26,16 +26,12 @@ extension VCWithLoaderProtocol {
 }
 
 class ViewController: UIViewController, VCWithLoaderProtocol {
-    private var interactor: InteractorA!
+    var interactor: InteractorPresenterA!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //Setup here for now
-        let presenter = PresenterA(vc: self)
-        self.interactor = InteractorA(presenter: presenter, state: AppState.fromStorage())
-
         self.interactor.refreshView()
     }
 
@@ -45,14 +41,18 @@ class ViewController: UIViewController, VCWithLoaderProtocol {
     }
 
     func gotoProfile() {
-        Route.profile(state: interactor!.state).pushFrom(self)
+        Route.profile(state: interactor.state).pushFrom(self)
     }
     
-    @IBOutlet weak var segmentControll: UISegmentedControl!
+    @IBOutlet weak private var segmentControll: UISegmentedControl!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     @IBAction func segmentChanged(_ sender: Any) {
         self.interactor.doSomethingOnSegmentChange(newValue: self.segmentControll.selectedSegmentIndex)
+    }
+    
+    func setSelectedIndex(_ value: Int) {
+        segmentControll.selectedSegmentIndex = value
     }
 }
 

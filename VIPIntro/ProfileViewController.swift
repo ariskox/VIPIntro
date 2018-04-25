@@ -12,13 +12,13 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var genderLabel: UILabel!
 
-    var interactor: ProfileInteractor!
+    var interactor: ProfilePresenterInteractor!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.interactor.processUserGenderSelection()
+        interactor.processUserGenderSelection()
     }
 
 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FAC3F8B208F5E13006AEE5B /* InteractorA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC3F8A208F5E13006AEE5B /* InteractorA.swift */; };
 		1FAC3F8F208F616A006AEE5B /* PresenterA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC3F8E208F616A006AEE5B /* PresenterA.swift */; };
 		1FC906E5208F5AFC005EE0E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC906E4208F5AFC005EE0E4 /* AppDelegate.swift */; };
 		1FC906E7208F5AFC005EE0E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC906E6208F5AFC005EE0E4 /* ViewController.swift */; };
@@ -19,7 +18,6 @@
 		1FC90713208F5BE2005EE0E4 /* NibnamedWithDependenciesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC90712208F5BE2005EE0E4 /* NibnamedWithDependenciesProtocol.swift */; };
 		AB4ABD15208F6C0B00A0C0AD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD14208F6C0B00A0C0AD /* ProfileViewController.swift */; };
 		AB4ABD17208F6CC100A0C0AD /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD16208F6CC100A0C0AD /* ProfileInteractor.swift */; };
-		AB4ABD19208F6CCA00A0C0AD /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD18208F6CCA00A0C0AD /* ProfilePresenter.swift */; };
 		AB4ABD1B208F6EA100A0C0AD /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD1A208F6EA100A0C0AD /* Route.swift */; };
 		AB4ABD1D208F748800A0C0AD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD1C208F748800A0C0AD /* AppState.swift */; };
 		AB4ABD1F208F794100A0C0AD /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD1E208F794100A0C0AD /* AppStoryboard.swift */; };
@@ -43,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FAC3F8A208F5E13006AEE5B /* InteractorA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorA.swift; sourceTree = "<group>"; };
 		1FAC3F8E208F616A006AEE5B /* PresenterA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterA.swift; sourceTree = "<group>"; };
 		1FC906E1208F5AFC005EE0E4 /* VIPIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC906E4208F5AFC005EE0E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +58,6 @@
 		1FC90712208F5BE2005EE0E4 /* NibnamedWithDependenciesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibnamedWithDependenciesProtocol.swift; sourceTree = "<group>"; };
 		AB4ABD14208F6C0B00A0C0AD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AB4ABD16208F6CC100A0C0AD /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
-		AB4ABD18208F6CCA00A0C0AD /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		AB4ABD1A208F6EA100A0C0AD /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		AB4ABD1C208F748800A0C0AD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		AB4ABD1E208F794100A0C0AD /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
@@ -118,11 +114,9 @@
 				1FC90714208F5BEF005EE0E4 /* Common Protocols */,
 				1FC906E4208F5AFC005EE0E4 /* AppDelegate.swift */,
 				1FC906E6208F5AFC005EE0E4 /* ViewController.swift */,
-				1FAC3F8A208F5E13006AEE5B /* InteractorA.swift */,
 				1FAC3F8E208F616A006AEE5B /* PresenterA.swift */,
 				AB4ABD14208F6C0B00A0C0AD /* ProfileViewController.swift */,
 				AB4ABD16208F6CC100A0C0AD /* ProfileInteractor.swift */,
-				AB4ABD18208F6CCA00A0C0AD /* ProfilePresenter.swift */,
 				AB4ABD1A208F6EA100A0C0AD /* Route.swift */,
 				AB4ABD1E208F794100A0C0AD /* AppStoryboard.swift */,
 				AB4ABD1C208F748800A0C0AD /* AppState.swift */,
@@ -295,13 +289,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB4ABD1B208F6EA100A0C0AD /* Route.swift in Sources */,
-				1FAC3F8B208F5E13006AEE5B /* InteractorA.swift in Sources */,
 				1FC906E7208F5AFC005EE0E4 /* ViewController.swift in Sources */,
 				AB4ABD1F208F794100A0C0AD /* AppStoryboard.swift in Sources */,
 				1FC906E5208F5AFC005EE0E4 /* AppDelegate.swift in Sources */,
 				AB4ABD15208F6C0B00A0C0AD /* ProfileViewController.swift in Sources */,
 				AB4ABD1D208F748800A0C0AD /* AppState.swift in Sources */,
-				AB4ABD19208F6CCA00A0C0AD /* ProfilePresenter.swift in Sources */,
 				1FC90713208F5BE2005EE0E4 /* NibnamedWithDependenciesProtocol.swift in Sources */,
 				AB4ABD17208F6CC100A0C0AD /* ProfileInteractor.swift in Sources */,
 				1FAC3F8F208F616A006AEE5B /* PresenterA.swift in Sources */,

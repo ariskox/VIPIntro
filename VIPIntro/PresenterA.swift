@@ -8,28 +8,35 @@
 
 import Foundation
 
-class PresenterA {
+class InteractorPresenterA {
     weak var vc: ViewController?
-    
-    required init(vc: ViewController) {
+    var state: AppState
+
+    required init(state: AppState = AppState(), vc: ViewController) {
         self.vc = vc
+        self.state = state
     }
     
-    func didSomethingOnSegmentChange(value: Int) {
-        print("lala = \(value)")
-        vc?.view.backgroundColor = (value==0) ? .green : .red
-        vc?.gotoProfile()
-    }
-    
-    func startLoader() {
-        vc?.startLoader()
-    }
-    
-    func stopLoader() {
-        vc?.stopLoader()
+    func showPreselectedGender(value: Int) {
+        vc?.setSelectedIndex(value)
     }
 
-    func showPreselectedGender(value: Int) {
-        vc?.segmentControll.selectedSegmentIndex = value
+    func doSomethingOnSegmentChange(newValue: Int)  {
+        state.gender = newValue
+        state.savetoStorage()
+        
+        vc?.startLoader()
+        // Do something for 1 second
+        let t = DispatchTime.now() + 3.0
+        
+        DispatchQueue.main.asyncAfter(deadline: t) {
+            self.vc?.stopLoader()
+            self.vc?.view.backgroundColor = (newValue==0) ? .green : .red
+            self.vc?.gotoProfile()
+        }
+    }
+    
+    func refreshView() {
+        showPreselectedGender(value: state.gender)
     }
 }
