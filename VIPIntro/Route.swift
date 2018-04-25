@@ -15,14 +15,11 @@ enum Route: RouteProtocol {
     var viewController: UIViewController {
         switch self {
         case .main:
-            return AppStoryboard.Main.initialViewController()!
+            return AppStoryboard.main.initialViewController()!
         case .profile(let state):
-            let vc = ProfileViewController.instantiate(fromAppStoryboard: .Main)
-            
-            let pres = ProfilePresenter.init(vc: vc)
-            let inter = ProfileInteractor.init(presenter: pres, state: state)
-            vc.interactor = inter
-            
+            let vc = ProfileViewController.instantiate(fromAppStoryboard: .main)
+            let presenter = ProfilePresenter(vc: vc)
+            vc.interactor = ProfileInteractor(presenter: presenter, state: state)
             return vc
         }
     }
@@ -35,6 +32,6 @@ protocol RouteProtocol {
 
 extension RouteProtocol {
     func pushFrom(_ origin: UIViewController) {
-        origin.navigationController?.pushViewController(self.viewController, animated: true)
+        origin.navigationController?.pushViewController(viewController, animated: true)
     }
 }

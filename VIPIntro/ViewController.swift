@@ -9,31 +9,34 @@
 import UIKit
 
 protocol VCWithLoaderProtocol {
-    
+    var activityIndicator: UIActivityIndicatorView! { get }
+
     func startLoader()
     func stopLoader()
 }
 
-class ViewController: UIViewController, VCWithLoaderProtocol {
+extension VCWithLoaderProtocol {
     func startLoader() {
-        self.activityIndicator.startAnimating()
+        activityIndicator.startAnimating()
     }
     
     func stopLoader() {
-        self.activityIndicator.stopAnimating()
+        activityIndicator.stopAnimating()
     }
+}
 
-    private var interactor: InteractorA?
+class ViewController: UIViewController, VCWithLoaderProtocol {
+    private var interactor: InteractorA!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         //Setup here for now
-        let presenter = PresenterB(vc: self)
+        let presenter = PresenterA(vc: self)
         self.interactor = InteractorA(presenter: presenter, state: AppState.fromStorage())
 
-        self.interactor?.refreshView()
+        self.interactor.refreshView()
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,13 +49,10 @@ class ViewController: UIViewController, VCWithLoaderProtocol {
     }
     
     @IBOutlet weak var segmentControll: UISegmentedControl!
-    
-    @IBAction func segmentChanged(_ sender: Any) {
-        
-        self.interactor?.doSomethingOnSegmentChange(newValue: self.segmentControll.selectedSegmentIndex)
-    }
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
+    @IBAction func segmentChanged(_ sender: Any) {
+        self.interactor.doSomethingOnSegmentChange(newValue: self.segmentControll.selectedSegmentIndex)
+    }
 }
 

@@ -13,10 +13,10 @@ protocol CommonInteractorForCaseAProtocol {
 }
 
 class InteractorA {
-    private let presenter: PresenterB
+    private let presenter: PresenterA
     var state: AppState
     
-    init(presenter: PresenterB, state: AppState = AppState()) {
+    init(presenter: PresenterA, state: AppState = AppState()) {
         self.presenter = presenter
         self.state = state
     }

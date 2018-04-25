@@ -16,7 +16,6 @@ class ProfilePresenter {
     }
     
     func showUserGenderSelection(gender: Int) {
-        
         vc?.genderLabel.text = String(gender)
     }
 }
