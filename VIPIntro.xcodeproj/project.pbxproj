@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FAC3F8B208F5E13006AEE5B /* InteractorA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC3F8A208F5E13006AEE5B /* InteractorA.swift */; };
+		1FAC3F8D208F5EF5006AEE5B /* PresenterA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC3F8C208F5EF5006AEE5B /* PresenterA.swift */; };
+		1FAC3F8F208F616A006AEE5B /* PresenterB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAC3F8E208F616A006AEE5B /* PresenterB.swift */; };
 		1FC906E5208F5AFC005EE0E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC906E4208F5AFC005EE0E4 /* AppDelegate.swift */; };
 		1FC906E7208F5AFC005EE0E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC906E6208F5AFC005EE0E4 /* ViewController.swift */; };
 		1FC906EA208F5AFC005EE0E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC906E8208F5AFC005EE0E4 /* Main.storyboard */; };
@@ -14,6 +17,13 @@
 		1FC906EF208F5AFC005EE0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC906ED208F5AFC005EE0E4 /* LaunchScreen.storyboard */; };
 		1FC906FA208F5AFC005EE0E4 /* VIPIntroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC906F9208F5AFC005EE0E4 /* VIPIntroTests.swift */; };
 		1FC90705208F5AFC005EE0E4 /* VIPIntroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC90704208F5AFC005EE0E4 /* VIPIntroUITests.swift */; };
+		1FC90713208F5BE2005EE0E4 /* NibnamedWithDependenciesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC90712208F5BE2005EE0E4 /* NibnamedWithDependenciesProtocol.swift */; };
+		AB4ABD15208F6C0B00A0C0AD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD14208F6C0B00A0C0AD /* ProfileViewController.swift */; };
+		AB4ABD17208F6CC100A0C0AD /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD16208F6CC100A0C0AD /* ProfileInteractor.swift */; };
+		AB4ABD19208F6CCA00A0C0AD /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD18208F6CCA00A0C0AD /* ProfilePresenter.swift */; };
+		AB4ABD1B208F6EA100A0C0AD /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD1A208F6EA100A0C0AD /* Route.swift */; };
+		AB4ABD1D208F748800A0C0AD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD1C208F748800A0C0AD /* AppState.swift */; };
+		AB4ABD1F208F794100A0C0AD /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4ABD1E208F794100A0C0AD /* AppStoryboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FAC3F8A208F5E13006AEE5B /* InteractorA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorA.swift; sourceTree = "<group>"; };
+		1FAC3F8C208F5EF5006AEE5B /* PresenterA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterA.swift; sourceTree = "<group>"; };
+		1FAC3F8E208F616A006AEE5B /* PresenterB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterB.swift; sourceTree = "<group>"; };
 		1FC906E1208F5AFC005EE0E4 /* VIPIntro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPIntro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC906E4208F5AFC005EE0E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FC906E6208F5AFC005EE0E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,13 @@
 		1FC90700208F5AFC005EE0E4 /* VIPIntroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPIntroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FC90704208F5AFC005EE0E4 /* VIPIntroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPIntroUITests.swift; sourceTree = "<group>"; };
 		1FC90706208F5AFC005EE0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FC90712208F5BE2005EE0E4 /* NibnamedWithDependenciesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibnamedWithDependenciesProtocol.swift; sourceTree = "<group>"; };
+		AB4ABD14208F6C0B00A0C0AD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AB4ABD16208F6CC100A0C0AD /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		AB4ABD18208F6CCA00A0C0AD /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		AB4ABD1A208F6EA100A0C0AD /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		AB4ABD1C208F748800A0C0AD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AB4ABD1E208F794100A0C0AD /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +117,18 @@
 		1FC906E3208F5AFC005EE0E4 /* VIPIntro */ = {
 			isa = PBXGroup;
 			children = (
+				1FC90714208F5BEF005EE0E4 /* Common Protocols */,
 				1FC906E4208F5AFC005EE0E4 /* AppDelegate.swift */,
 				1FC906E6208F5AFC005EE0E4 /* ViewController.swift */,
+				1FAC3F8A208F5E13006AEE5B /* InteractorA.swift */,
+				1FAC3F8C208F5EF5006AEE5B /* PresenterA.swift */,
+				1FAC3F8E208F616A006AEE5B /* PresenterB.swift */,
+				AB4ABD14208F6C0B00A0C0AD /* ProfileViewController.swift */,
+				AB4ABD16208F6CC100A0C0AD /* ProfileInteractor.swift */,
+				AB4ABD18208F6CCA00A0C0AD /* ProfilePresenter.swift */,
+				AB4ABD1A208F6EA100A0C0AD /* Route.swift */,
+				AB4ABD1E208F794100A0C0AD /* AppStoryboard.swift */,
+				AB4ABD1C208F748800A0C0AD /* AppState.swift */,
 				1FC906E8208F5AFC005EE0E4 /* Main.storyboard */,
 				1FC906EB208F5AFC005EE0E4 /* Assets.xcassets */,
 				1FC906ED208F5AFC005EE0E4 /* LaunchScreen.storyboard */,
@@ -123,6 +153,14 @@
 				1FC90706208F5AFC005EE0E4 /* Info.plist */,
 			);
 			path = VIPIntroUITests;
+			sourceTree = "<group>";
+		};
+		1FC90714208F5BEF005EE0E4 /* Common Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1FC90712208F5BE2005EE0E4 /* NibnamedWithDependenciesProtocol.swift */,
+			);
+			name = "Common Protocols";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +297,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB4ABD1B208F6EA100A0C0AD /* Route.swift in Sources */,
+				1FAC3F8D208F5EF5006AEE5B /* PresenterA.swift in Sources */,
+				1FAC3F8B208F5E13006AEE5B /* InteractorA.swift in Sources */,
 				1FC906E7208F5AFC005EE0E4 /* ViewController.swift in Sources */,
+				AB4ABD1F208F794100A0C0AD /* AppStoryboard.swift in Sources */,
 				1FC906E5208F5AFC005EE0E4 /* AppDelegate.swift in Sources */,
+				AB4ABD15208F6C0B00A0C0AD /* ProfileViewController.swift in Sources */,
+				AB4ABD1D208F748800A0C0AD /* AppState.swift in Sources */,
+				AB4ABD19208F6CCA00A0C0AD /* ProfilePresenter.swift in Sources */,
+				1FC90713208F5BE2005EE0E4 /* NibnamedWithDependenciesProtocol.swift in Sources */,
+				AB4ABD17208F6CC100A0C0AD /* ProfileInteractor.swift in Sources */,
+				1FAC3F8F208F616A006AEE5B /* PresenterB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +555,7 @@
 				1FC9070B208F5AFC005EE0E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FC9070C208F5AFC005EE0E4 /* Build configuration list for PBXNativeTarget "VIPIntroTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +564,7 @@
 				1FC9070E208F5AFC005EE0E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FC9070F208F5AFC005EE0E4 /* Build configuration list for PBXNativeTarget "VIPIntroUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +573,7 @@
 				1FC90711208F5AFC005EE0E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
