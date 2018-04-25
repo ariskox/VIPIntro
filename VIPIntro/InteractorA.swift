@@ -8,15 +8,18 @@
 
 import Foundation
 
-protocol CommonInteractorForCaseAProtocol {
-    
+protocol InteractorAProtocol {
+    var presenter: PresenterAProtocol { get }
+    var state: AppState { get set }
+    func doSomethingOnSegmentChange(newValue: Int)
+    func refreshView()
 }
 
-class InteractorA {
-    private let presenter: PresenterA
+class InteractorA: InteractorAProtocol {
+    let presenter: PresenterAProtocol
     var state: AppState
     
-    init(presenter: PresenterA, state: AppState = AppState()) {
+    init(presenter: PresenterAProtocol, state: AppState = AppState()) {
         self.presenter = presenter
         self.state = state
     }

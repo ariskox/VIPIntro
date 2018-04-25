@@ -26,13 +26,11 @@ extension VCWithLoaderProtocol {
 }
 
 class ViewController: UIViewController, VCWithLoaderProtocol {
-    private var interactor: InteractorA!
+    var interactor: InteractorAProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-
         self.interactor.refreshView()
     }
 
@@ -42,7 +40,7 @@ class ViewController: UIViewController, VCWithLoaderProtocol {
     }
 
     func gotoProfile() {
-        Route.profile(state: interactor!.state).pushFrom(self)
+        Route.profile(state: interactor.state).pushFrom(self)
     }
     
     @IBOutlet weak var segmentControll: UISegmentedControl!

@@ -8,7 +8,16 @@
 
 import Foundation
 
-class PresenterA {
+protocol PresenterAProtocol {
+    weak var vc: ViewController? { get set }
+    init(vc: ViewController)
+    func didSomethingOnSegmentChange(value: Int)
+    func startLoader()
+    func stopLoader()
+    func showPreselectedGender(value: Int)
+}
+
+class PresenterA: PresenterAProtocol {
     weak var vc: ViewController?
     
     required init(vc: ViewController) {

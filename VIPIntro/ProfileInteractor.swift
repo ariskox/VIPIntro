@@ -8,19 +8,24 @@
 
 import Foundation
 
-class ProfileInteractor {
-    let presenter: ProfilePresenter
+protocol ProfileInteractorProtocol {
+    var presenter: ProfilePresenterProtocol { get }
+    var state: AppState { get }
+    func processUserGenderSelection()
+}
+
+class ProfileInteractor: ProfileInteractorProtocol {
+    let presenter: ProfilePresenterProtocol
     
     //Datastore
     let state: AppState
     
-    init(presenter: ProfilePresenter, state: AppState) {
+    init(presenter: ProfilePresenterProtocol, state: AppState) {
         self.presenter = presenter
         self.state = state
     }
     
     func processUserGenderSelection() {
-        
         self.presenter.showUserGenderSelection(gender: state.gender)
     }
 }

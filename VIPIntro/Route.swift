@@ -16,7 +16,6 @@ enum Route: RouteProtocol {
         switch self {
         case .main:
             let vc = ViewController.instantiate(fromAppStoryboard: .main)
-            //Setup here for now
             let presenter = PresenterA(vc: vc)
             vc.interactor = InteractorA(presenter: presenter, state: AppState.fromStorage())
             return vc

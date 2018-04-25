@@ -12,7 +12,7 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var genderLabel: UILabel!
 
-    var interactor: ProfileInteractor!
+    var interactor: ProfileInteractorProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,7 +8,12 @@
 
 import Foundation
 
-class ProfilePresenter {
+protocol ProfilePresenterProtocol {
+    weak var vc: ProfileViewController? { get }
+    func showUserGenderSelection(gender: Int)
+}
+
+class ProfilePresenter: ProfilePresenterProtocol {
     weak var vc: ProfileViewController?
     
     init(vc: ProfileViewController) {
