@@ -32,9 +32,6 @@ class ViewController: UIViewController, VCWithLoaderProtocol {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //Setup here for now
-        let presenter = PresenterA(vc: self)
-        self.interactor = InteractorA(presenter: presenter, state: AppState.fromStorage())
 
         self.interactor.refreshView()
     }
